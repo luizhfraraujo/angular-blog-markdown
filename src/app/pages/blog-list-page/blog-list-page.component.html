@@ -1,0 +1,9 @@
+<div class="content">
+    <div *ngFor="let post of posts">
+        <h1>
+            <a [routerLink]="['/blog', post.alias]">{{post.title}}</a>
+        </h1>
+    </div>   
+</div>
+
+<!-- <div markdown [src]="'./assets/blog/posts/primeiro-post.md'"></div> -->
