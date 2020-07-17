@@ -11,6 +11,7 @@ export class BlogService {
   posts: PostMetadataModel[] = [
     {
       alias: "primeiro-post",
+      image: "http://placehold.it/750x300",
       title: "Meu Primeiro Post",
       createdAt: "17/07/2020",
       author: "Luiz Henrique",

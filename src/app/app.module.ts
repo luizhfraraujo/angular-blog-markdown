@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { BlogListPageComponent } from './pages/blog-list-page/blog-list-page.component';
 import { BlogPostPageComponent } from './pages/blog-post-page/blog-post-page.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { SiteLayoutComponent } from './layouts/site-layout/site-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogListPageComponent,
-    BlogPostPageComponent
+    BlogPostPageComponent,
+    SiteLayoutComponent
   ],
   imports: [
     BrowserModule,

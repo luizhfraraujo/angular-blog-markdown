@@ -1,9 +1,32 @@
-<div class="content">
-    <div *ngFor="let post of posts">
-        <h1>
-            <a [routerLink]="['/blog', post.alias]">{{post.title}}</a>
-        </h1>
-    </div>   
-</div>
+<div class="row">
 
-<!-- <div markdown [src]="'./assets/blog/posts/primeiro-post.md'"></div> -->
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+
+        <h1 class="my-4">Meu Blog
+            <small>Algumas idéias</small>
+        </h1>
+
+        <div *ngFor="let post of posts">
+            <div class="card mb-4">
+                <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">{{post.title}}</h2>
+                    <p class="card-text"></p>
+                    <a [routerLink]="['/blog', post.alias]" class="btn btn-primary">Leia Mais &rarr;</a>
+                </div>
+                <div class="card-footer text-muted">
+                    {{post.createdAt}} por
+                    <a href="#">{{post.author}}</a>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Post -->
+
+
+        <!-- Blog Post -->
+
+
+    </div>
+
+</div>
